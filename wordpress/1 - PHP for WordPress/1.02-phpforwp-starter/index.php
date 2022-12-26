@@ -1,18 +1,34 @@
-<?php 
-echo "hello";
-?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PHP for WordPress</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+  </head>
+  <body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <header id="masthead">
+      <h1><a href="#">PHP for WordPress</a></h1>
+    </header>
 
-<body>
-    <h1>hello</h1>
+    <div id="content">
+
+    <?php
+
+      // Create a variable called $name and assign it your name
+      $name = "deepen";
+      // for join string
+      $first_name = "deepen";
+      $last_name = "bhujel";
+    ?>
+
+    <h2>Welcome!</h2>
+  <!-- single variable call -->
+    <p>My name is "<?php echo $name?>."</p>
+    <!-- string concatination -->
+    <p> my name is <?php echo $first_name . " ".$last_name ?></p>
+
+  </div>
 </body>
-
 </html>
